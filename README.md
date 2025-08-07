@@ -9,7 +9,7 @@
 
 | Homepage                                | Projects & Skills Page                      | About Page                                  |
 | --------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-| ![Homepage Screenshot]([placeholder.jpg](https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182149.png) | ![Projects Page Screenshot]((https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182223.png))| ![About Page Screenshot](https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182258.png)   |
+| ![Homepage Screenshot](https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182149.png) | ![Projects Page Screenshot](https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182223.png)| ![About Page Screenshot](https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182258.png)   |
 
 ---
 
