@@ -1,17 +1,15 @@
-# Reza Nadimi - Dynamic Personal Portfolio Website
-#### Video Demo:  <URL HERE>
-#### This repository contains the source code for the personal portfolio website of Reza Nadimi, a Mechatronics M.Sc. student at Sharif University. This project, developed as a capstone, is a fully functional, database-driven web application built from the ground up using Python and the Flask web framework. It showcases not only my engineering projects and academic achievements but also my proficiency in modern full-stack web development.
-
+# Reza Nadimi - Personal Portfolio
+#### Video Demo:  https://youtu.be/a5pGDbhHg6M
+#### Description: This is the source code for my personal portfolio website, submitted as my capstone project. It is a fully functional, database-driven web application built from the ground up using Python and the Flask web framework. The site showcases my engineering projects and academic achievements while demonstrating my proficiency in modern full-stack web development.
 
 ---
 
 ## 📸 Screenshots
 
-*(**Note:** You should replace these placeholders with actual screenshots of your running application.)*
 
-| Homepage                                | Projects & Skills Page                      | Secure Admin Panel                          |
+| Homepage                                | Projects & Skills Page                      | About Page                                  |
 | --------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-| ![Homepage Screenshot](placeholder.jpg) | ![Projects Page Screenshot](placeholder.jpg) | ![Admin Panel Screenshot](placeholder.jpg) |
+| ![Homepage Screenshot]([placeholder.jpg](https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182149.png) | ![Projects Page Screenshot]((https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182223.png))| ![About Page Screenshot](https://github.com/rezaxr14/Personal_Portfolio/blob/main/screenshots/Screenshot%202025-08-07%20182258.png)   |
 
 ---
 
@@ -75,8 +73,8 @@ To run this project locally, please follow these steps.
 
 #### **2. Clone the Repository**
 ```bash
-git clone [https://github.com/rezaxr14/your-portfolio-repo.git](https://github.com/rezaxr14/your-portfolio-repo.git)
-cd your-portfolio-repo
+git clone [https://github.com/rezaxr14/Personal_Portfolio.git](https://github.com/rezaxr14/Personal_Portfolio.git)
+cd Personal_Portfolio
 ```
 
 #### **3. Create and Activate a Virtual Environment**
@@ -92,33 +90,17 @@ cd your-portfolio-repo
     ```
 
 #### **4. Install Dependencies**
-First, create a `requirements.txt` file from your project folder:
-```bash
-pip freeze > requirements.txt
-```
-Then, install all the necessary packages from this file:
 ```bash
 pip install -r requirements.txt
 ```
 
 #### **5. Configure Environment Variables**
-This application requires environment variables for secure configuration.
-* **`SECRET_KEY`**: A long, random string used for session security.
-* **`EMAIL_USER`**: The Gmail address from which notification emails will be sent.
-* **`EMAIL_PASS`**: The 16-character **App Password** for your Gmail account. (Do not use your regular password).
-
-* **On macOS/Linux:**
-    ```bash
-    export SECRET_KEY="a-very-long-and-random-string-for-security"
-    export EMAIL_USER="your.email@gmail.com"
-    export EMAIL_PASS="your_16_character_app_password"
-    ```
-* **On Windows (Command Prompt):**
-    ```bash
-    set SECRET_KEY="a-very-long-and-random-string-for-security"
-    set EMAIL_USER="your.email@gmail.com"
-    set EMAIL_PASS="your_16_character_app_password"
-    ```
+This application requires environment variables for secure configuration. Create a `.env` file in the root directory and add the following:
+```
+SECRET_KEY="a-very-long-and-random-string-for-security"
+EMAIL_USER="your.email@gmail.com"
+EMAIL_PASS="your_16_character_app_password"
+```
 
 #### **6. Initialize the Database**
 Before running the app for the first time, you must create the database schema. Run the following commands in your terminal:
@@ -151,14 +133,14 @@ Once the setup and configuration are complete, you can run the application.
 3.  **Access the Admin Panel:**
     * Navigate to `http://127.0.0.1:5000/login`.
     * Enter the admin credentials defined in `app.py` (default: `admin` / `password123`).
-    * Upon successful login, you will be redirected to the `/admin/messages` page, where you can view all submitted contact form messages.
+    * Upon successful login, you will be redirected to the `/admin/messages` page.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-rezanadimi_portfolio/
+Personal_Portfolio/
 │
 ├── app.py              # Main Flask application logic, routes, and config
 ├── forms.py            # WTForms class definitions
@@ -167,20 +149,10 @@ rezanadimi_portfolio/
 ├── requirements.txt    # List of Python dependencies
 │
 ├── static/             # Contains all static files
-│   ├── css/
-│   │   └── style.css   # Custom stylesheets
-│   └── images/
-│       └── ...         # Project and user images
+│   └── ...
 │
 └── templates/          # Contains all Jinja2 HTML templates
-    ├── layout.html     # Base template with navbar and footer
-    ├── index.html      # Homepage
-    ├── about.html      # About Me page
-    ├── projects.html   # Projects & Skills page
-    ├── education.html  # Education & Achievements page
-    ├── contact.html    # Contact form page
-    ├── login.html      # Admin login page
-    └── admin_messages.html # Secure page to view messages
+    └── ...
 ```
 
 ---
@@ -188,10 +160,9 @@ rezanadimi_portfolio/
 ## 🔮 Future Improvements
 
 While this project is fully functional, there is always room for growth. Potential future enhancements include:
-* **Dynamic Project Management:** Migrating the hardcoded projects into the database and building a full CRUD interface in the admin panel to add, edit, and delete them.
-* **Individual Project Pages:** Creating detailed pages for each project with image galleries, technical specs, and links to live demos or GitHub repos.
-* **Blog/Updates Section:** Adding a blog to share updates on research, new skills learned, or interesting articles.
-* **Enhanced Front-End:** Incorporating JavaScript libraries like AOS (Animate on Scroll) for more dynamic and engaging UI/UX.
+* **Dynamic Project Management:** Migrating the hardcoded projects into the database and building a full CRUD interface in the admin panel.
+* **Individual Project Pages:** Creating detailed pages for each project with image galleries and technical specs.
+* **Blog/Updates Section:** Adding a blog to share updates on research or new skills learned.
 
 ---
 
@@ -204,4 +175,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## 👨‍💻 Author
 
 * **Reza Nadimi**
-* **GitHub:** [https://github.com/rezaxr14](https://github.com/rezaxr14)
+* **GitHub:** [https://github.com/rezaxr14/Personal_Portfolio](https://github.com/rezaxr14/Personal_Portfolio)
