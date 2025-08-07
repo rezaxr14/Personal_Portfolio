@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row align-items-center hero-section">
+    <div class="col-md-7">
+        <h1 class="display-4">Reza Nadimi</h1>
+        <p class="lead">
+            M.Sc. Student in <strong>Mechatronics</strong> at Sharif University with a passion for <strong>Robotics, Artificial Intelligence, and Control Systems</strong>.
+        </p>
+        <p>
+            Driven by a challenge-seeking mindset and a strong academic background in Mechanical Engineering from the University of Tabriz.
+        </p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Contact Me</a>
+        <a href="{{ url_for('projects') }}" class="btn btn-secondary btn-lg">View Projects</a>
+    </div>
+    <div class="col-md-5 text-center">
+        <img src="{{ url_for('static', filename='images/reza_hero.jpg') }}" alt="Reza Nadimi" class="img-fluid rounded-circle profile-picture">
+    </div>
+</div>
+
+<hr class="my-5">
+
+<div class="row text-center">
+    <h2 class="mb-4">Highlights</h2>
+    
+    <div class="col-md-4">
+        <h3>🎓 Top-Tier Education</h3>
+        <p>Currently pursuing a Master's in Mechatronics at Sharif University after graduating with a <strong>3.88 GPA</strong> in Mechanical Engineering from Tabriz University (Top 3% of class).</p>
+    </div>
+    
+    <div class="col-md-4">
+        <h3>🤖 AI & Robotics Focus</h3>
+        <p>Deeply interested in the intersection of hardware and software. Certified in AI/ML through courses from Harvard (CS50) and Faradars.</p>
+    </div>
+    
+    <div class="col-md-4">
+        <h3>🏆 Distinguished Honoree</h3>
+        <p>Selected as a distinguished participant after successfully passing the initial round of the prestigious 30th National Iran Olympiads in Mechanical Engineering.</p>
+    </div>
+</div>
+{% endblock %}

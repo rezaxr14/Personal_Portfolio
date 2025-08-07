@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1 class="mb-5 text-center">Education & Achievements</h1>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h3 class="card-title">Sharif University of Technology</h3>
+                <h6 class="card-subtitle mb-2 text-muted">Tehran, Iran | Present</h6>
+                <p class="card-text"><strong>Master of Science, Mechatronics Engineering</strong></p>
+                <p>Deepening my expertise in robotics, advanced control systems, and applied artificial intelligence.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+             <img src="{{ url_for('static', filename='images/tabriz_award.jpg') }}" class="card-img-top" alt="University of Tabriz Award">
+            <div class="card-body">
+                <h3 class="card-title">University of Tabriz</h3>
+                <h6 class="card-subtitle mb-2 text-muted">Tabriz, Iran</h6>
+                <p class="card-text"><strong>Bachelor of Science, Mechanical Engineering</strong></p>
+                <ul>
+                    <li>Graduated with a <strong>GPA of 3.88/4.00</strong>.</li>
+                    <li>Ranked among the <strong>Top 3%</strong> of students in my class.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5">
+
+<h2 class="text-center mb-4">Certificates & Honors</h2>
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Distinguished Honoree, 30th Iran Olympiads in Mechanical Engineering</h5>
+        </div>
+        <p class="mb-1">Selected after successfully passing the competitive initial round of the national olympiad.</p>
+    </a>
+    <a href="https://cs50.harvard.edu/ai/" class="list-group-item list-group-item-action" target="_blank">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">CS50's Introduction to Artificial Intelligence with Python</h5>
+            <small>Harvard University</small>
+        </div>
+        <p class="mb-1">Completed comprehensive coursework on machine learning algorithms, search, and neural networks.</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">CS50x & CS50P Certifications</h5>
+            <small>Harvard University</small>
+        </div>
+        <p class="mb-1">Mastered fundamental concepts of computer science and Python programming.</p>
+    </a>
+     <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">AI & Machine Learning Certificates</h5>
+            <small>Faradars</small>
+        </div>
+        <p class="mb-1">Completed specialized courses focusing on practical AI/ML applications.</p>
+    </a>
+</div>
+{% endblock %}

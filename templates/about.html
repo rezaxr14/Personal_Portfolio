@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h1 class="mb-4">About Me</h1>
+        <p class="lead">Hello! I'm Reza, a mechatronics engineer driven by a fascination with how intelligent systems interact with the physical world.</p>
+        <p>My journey began in mechanical engineering, where I built a strong foundation in the principles of dynamics, materials, and design. However, my curiosity always pulled me toward the "brains" behind the machinery. This led me to pursue a Master's degree in Mechatronics at Sharif University, where I now explore the exciting convergence of mechanics, electronics, and computer science.</p>
+        
+        <h3 class="mt-5">My Core Interests</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>🤖 Robotics:</strong> From kinematic analysis to developing autonomous navigation, I am passionate about creating robots that can perceive and act upon their environment.</li>
+            <li class="list-group-item"><strong>🧠 Artificial Intelligence & ML:</strong> I am captivated by the power of machine learning to solve complex problems. I have hands-on experience through projects and certifications, including Harvard's CS50AI.</li>
+            <li class="list-group-item"><strong>⚙️ Control Systems:</strong> Designing robust controllers that ensure stability and optimal performance is a challenge I thoroughly enjoy. It's the essential link between the digital brain and the physical body of a machine.</li>
+            <li class="list-group-item"><strong>💻 Computers & Programming:</strong> I see programming as the ultimate tool for creation. My skills in Python and other languages allow me to bring theoretical ideas to life, whether it's a simulation or a functional web application like this one.</li>
+        </ul>
+    </div>
+    <div class="col-md-4 text-center">
+        <img src="{{ url_for('static', filename='images/reza_group.jpg') }}" class="img-fluid rounded shadow-sm mt-4" alt="Reza Nadimi with family">
+        <p class="text-muted mt-2 fst-italic">Celebrating my graduation from Tabriz University.</p>
+    </div>
+</div>
+{% endblock %}

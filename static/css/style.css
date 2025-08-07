@@ -1,0 +1,38 @@
+/* static/css/style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.profile-picture {
+    border: 5px solid #dee2e6; /* A subtle border around your picture */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px; /* Adjust this value as needed (e.g., 250px, 350px) */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.project-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.message-col {
+    min-width: 250px; /* Ensures the column has a decent width */
+    word-break: break-word; /* Prevents long text from overflowing */
+}

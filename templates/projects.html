@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="mb-4">Projects & Skills</h1>
+    <p class="lead">Here are some of the projects I've worked on, along with the technologies I'm skilled in.</p>
+</div>
+
+<hr class="my-5">
+
+<h2 class="mb-4">Featured Projects</h2>
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 project-card">
+            <img src="{{ url_for('static', filename='images/project_robot.jpg') }}" class="card-img-top" alt="Autonomous Firefighter Robot">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mobile Autonomous Firefighter Robot</h5>
+                <p class="card-text">A prototype designed to autonomously navigate, detect, and extinguish small fires. This robot utilizes an Arduino microcontroller for processing sensor data and controlling movement. It features a servo-mounted nozzle for precise targeting, demonstrating practical skills in embedded systems, C++/Python programming, and real-time control.</p>
+                <a href="#" class="btn btn-primary mt-auto disabled">View Details (Coming Soon)</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 project-card">
+            <img src="{{ url_for('static', filename='images/project_fem.jpg') }}" class="card-img-top" alt="FEM Dental Implant Analysis">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">FEM Analysis of Dental Implant Crack Propagation</h5>
+                <p class="card-text">An advanced research project utilizing Finite Element Method (FEM) to simulate and analyze crack development in dental implants under biomechanical stress. This work involved creating complex 3D models and running simulations in ABAQUS to predict failure points, showcasing expertise in CAE software, biomechanics, and structural analysis.</p>
+                <a href="#" class="btn btn-primary mt-auto disabled">View Details (Coming Soon)</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5">
+
+<h2 class="mb-4">Technical Skills</h2>
+<div class="row">
+    <div class="col-md-4">
+        <h5>Programming & Software</h5>
+        <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success me-2"></i>Python</li>
+            <li><i class="fas fa-check text-success me-2"></i>C / C++</li>
+            <li><i class="fas fa-check text-success me-2"></i>ABAQUS</li>
+            <li><i class="fas fa-check text-success me-2"></i>MATLAB / Simulink</li>
+            <li><i class="fas fa-check text-success me-2"></i>SolidWorks / CAD</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h5>Web & Databases</h5>
+        <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success me-2"></i>Flask</li>
+            <li><i class="fas fa-check text-success me-2"></i>HTML5 & CSS3</li>
+            <li><i class="fas fa-check text-success me-2"></i>Bootstrap</li>
+            <li><i class="fas fa-check text-success me-2"></i>JavaScript</li>
+            <li><i class="fas fa-check text-success me-2"></i>SQLite</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h5>Engineering & Core Competencies</h5>
+        <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success me-2"></i>Robotics & Control Systems</li>
+            <li><i class="fas fa-check text-success me-2"></i>Artificial Intelligence & ML</li>
+            <li><i class="fas fa-check text-success me-2"></i>Finite Element Method (FEM)</li>
+            <li><i class="fas fa-check text-success me-2"></i>Mechanical Design & Dynamics</li>
+            <li><i class="fas fa-check text-success me-2"></i>Embedded Systems (Arduino)</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

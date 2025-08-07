@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Received Messages</h1>
+    <span class="badge bg-primary rounded-pill">{{ messages|length }} Total</span>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        {% if messages %}
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Timestamp</th>
+                            <th scope="col">From</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for msg in messages %}
+                        <tr>
+                            <th scope="row">{{ msg.id }}</th>
+                            <td>{{ msg.timestamp.strftime('%b %d, %Y %H:%M') }}</td>
+                            <td>{{ msg.name }}</td>
+                            <td>{{ msg.email }}</td>
+                            <td>{{ msg.subject }}</td>
+                            <td class="message-col">{{ msg.message }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="text-center p-4">
+                <p class="mb-0">You haven't received any messages yet.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<div class="alert alert-info mt-4" role="alert">
+  <strong>Note:</strong> In a full production application, this page should be protected by a login system to prevent unauthorized access.
+</div>
+{% endblock %}
