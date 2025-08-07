@@ -1,6 +1,7 @@
 # Reza Nadimi - Dynamic Personal Portfolio Website
+#### Video Demo:  <URL HERE>
+#### This repository contains the source code for the personal portfolio website of Reza Nadimi, a Mechatronics M.Sc. student at Sharif University. This project, developed as a capstone, is a fully functional, database-driven web application built from the ground up using Python and the Flask web framework. It showcases not only my engineering projects and academic achievements but also my proficiency in modern full-stack web development.
 
-This repository contains the source code for the personal portfolio website of Reza Nadimi, a Mechatronics M.Sc. student at Sharif University. This project, developed as a capstone, is a fully functional, database-driven web application built from the ground up using Python and the Flask web framework. It showcases not only my engineering projects and academic achievements but also my proficiency in modern full-stack web development.
 
 ---
 
